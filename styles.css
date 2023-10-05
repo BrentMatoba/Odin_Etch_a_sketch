@@ -5,6 +5,14 @@
     margin: 2px;
 
 }
+.activated{
+    background-color:black;
+}
+
+.buttonFormat{
+    display: flex;
+    justify-content: center;
+}
 
 .square{
     display: flex;
