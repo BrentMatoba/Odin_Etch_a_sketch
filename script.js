@@ -7,9 +7,21 @@ container.classList.add("container");
 document.body.appendChild(container);
 
 
+//creates top row of grid
 for(let i = 0; i < 16; i++){
-    const square = document.createElement('div');
-    //I think I can add the vertical divs here.
-    square.classList.add("square")
-    container.appendChild(square);
+    const row = document.createElement('div');
+    //adds columns
+    for(let j = 0; j < 16; j++){
+        const square = document.createElement('div');
+        square.classList.add("row", "square");
+        row.appendChild(square);
+    }
+    row.classList.add("row") //appends everything together
+    container.appendChild(row);
 }
+
+
+
+//add hover event listener
+//make class to add upon hover and remove upon non-hover
+//add button
