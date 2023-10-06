@@ -8,10 +8,8 @@
 .activated{
     background-color:black;
 }
-
-.buttonFormat{
-    display: flex;
-    justify-content: center;
+.buttonContainer{
+    text-align: center;
 }
 
 .square{
